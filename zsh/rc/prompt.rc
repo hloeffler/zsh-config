@@ -1,0 +1,6 @@
+autoload -U colors
+colors
+
+PS1="%B%F{green}%n@%m%k %B%F{blue}%~ %# %b%f%k"
+
+export RPROMPT='%(?..[%?])'

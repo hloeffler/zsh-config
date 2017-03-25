@@ -1,0 +1,14 @@
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
+alias ll='ls -lap'
+alias grepr='grep -r --exclude-dir=.svn'
+
+alias nscp='scp -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=/dev/null" -o "LogLevel=QUIET"'
+alias nssh='ssh -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=/dev/null" -o "LogLevel=QUIET"'
+
+#subversion
+alias svs="svn status -u"
+alias sup="svn update"
+
+alias svnpropHeadOnly="svn propset svn:keywords 'HeadURL' "
