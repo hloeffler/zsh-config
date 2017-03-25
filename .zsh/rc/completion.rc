@@ -21,3 +21,5 @@ zstyle ':completion:*:cd:*' ignored-patterns '(*/)#CVS'
 
 # ignore completion functions for commands we don’t have
 zstyle ':completion:*:functions' ignored-patterns '_*'
+
+zstyle ':completion:*' special-dirs true
