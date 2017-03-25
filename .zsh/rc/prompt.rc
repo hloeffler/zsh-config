@@ -1,6 +1,8 @@
 autoload -U colors
 colors
 
-PS1="%B%F{green}%n@%m%k %B%F{blue}%~ %# %b%f%k"
+autoload -Uz promptinit
+promptinit
+prompt adam1 black
 
-export RPROMPT='%(?..[%?])'
+export RPROMPT="%(?..[%?])"
