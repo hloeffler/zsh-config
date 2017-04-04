@@ -1,5 +1,8 @@
 setopt list_ambiguous
 
+# Shift-TAB == reverse
+bindkey '^[[Z' reverse-menu-complete
+
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
 
 # process completion
