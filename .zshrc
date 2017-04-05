@@ -24,4 +24,5 @@ if [[ -r "${HOME}/.zshrc.local" ]]; then
     source "${HOME}/.zshrc.local"
 fi
 
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 source "${HOME}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
