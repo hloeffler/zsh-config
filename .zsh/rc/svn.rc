@@ -1,0 +1,14 @@
+function svn {
+  if [ "$1" = "log" ]; then
+    command svn "$@" -v | sed -e 's,\(^   . \)/,\1,' | less -FX
+  elif [ "$1" = "wdiff" ]; then
+    shift
+    command svn diff "$@" | dwdiff -c --diff-input -P
+  elif [ "$1" = "show" ]; then
+    rev=${2/r/}
+    prev=$(( rev - 1))
+    command svn diff -r"${prev}:${rev}" | less -FX
+  else
+    command svn "$@"
+  fi
+}
